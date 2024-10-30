@@ -1,0 +1,22 @@
+.nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  width: 100%;
+  max-width: 980px;
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    &:hover {
+      color: #ff00aa;
+    }
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+  }
+}

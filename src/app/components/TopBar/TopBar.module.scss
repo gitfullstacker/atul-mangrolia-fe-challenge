@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px 40px;
+  width: 100%;
+}
+
+.left {
+  width: 72px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

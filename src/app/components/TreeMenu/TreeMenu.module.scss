@@ -1,0 +1,106 @@
+.treeMenu {
+  min-width: 304px;
+  height: fit-content;
+  border-bottom: 1px solid #0000001a;
+
+  .category {
+    .categoryHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 16px 0;
+      border-top: 1px solid #0000001a;
+
+      .toggleButton {
+        font-size: 18px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 8px;
+        color: #333;
+      }
+
+      .label {
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.03em;
+        text-align: center;
+      }
+    }
+  }
+
+  .subCategoryMenu {
+    padding-bottom: 20px;
+
+    .itemList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .item {
+        display: flex;
+        align-items: center;
+        padding: 8px 10px;
+
+        .label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: black;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          text-align: left;
+
+          .checkbox {
+            appearance: none;
+            color: black;
+            border: 1.5px solid #6e7780;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+
+            &:checked {
+              background-color: #000000;
+
+              &::after {
+                content: '';
+                position: absolute;
+                left: 6px;
+                top: 1px;
+                width: 5px;
+                height: 10px;
+                border: solid #ffffff;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .seeMoreButton {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 30px;
+      border: 1px solid #0000001a;
+      border-radius: 4px;
+      background-color: white;
+      color: #6d7280;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      text-align: left;
+    }
+  }
+}
